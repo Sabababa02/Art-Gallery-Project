@@ -1,0 +1,422 @@
+html, body{
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+/* დამალული ელემენტები */
+
+.first-image-tablet{
+    display:none;
+}
+
+.first-image-desktop{
+    display:none;
+}
+
+/*part1 დასტილვა და რაღაეები */
+.part1{
+    height:550px;
+    width:100%;
+}
+
+.first-image{
+    height:100%;
+    width:100%;
+}
+
+.location-box{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    width:260px;
+    height:72px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.black-part{
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brown-part{
+    background-color: #D5966C;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-part-text{
+    color:white;
+    font-family: 'Big Shoulders Display';
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.6363637447357178px;
+    text-align: left;
+
+}
+
+.arrow-left{
+    width:8px;
+    height:24px;
+}
+
+/* part1-ის დასტილვა დამთავრდა */
+
+/* part2-ის დასტილვა */
+
+.part2{
+    background-color: black;
+    height: 493px;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.part2-maintext{
+    width:343px;    
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.part2-h1{
+    color:white;
+    height: 45px;
+    width: 343px;
+    font-family: Big Shoulders Display;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+    text-align: left;
+    margin:0;
+    margin-top:48px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+.part2-h2{
+    height: 32px;
+    width: 343px;
+    font-family: Big Shoulders Display;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:#D5966C;
+    margin:0;
+    margin-top:48px;
+}
+
+.part2-p{
+    height: 84px;
+    width: 343px;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:white;
+    margin:0;
+    margin-top:20px;
+}
+
+.part2-p2{
+    height: 140px;
+    width: 343px;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:white;
+    margin:0;
+    margin-top:20px;
+}
+
+/* part2-ის დასტილვა დამთავრდა */
+
+/* part3-ის დასტილვა  */
+.part3{
+    background-color: #D5966C;
+    height: 336px;
+    width: 100%;
+    padding-left:16px;
+}
+
+.logo-dark{
+    height: 40px;
+    width: 110.0499038696289px;
+    margin-top:48px;
+    margin-left:calc((vw + 104)/2)
+}
+
+.part3-p{
+    height: 104px;
+    width: 311px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin:0;
+    margin-top:38px;
+    
+}
+
+.socialmedia-logos{
+    width:100px;
+    margin-top:40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.fb:hover{
+    fill:black;
+}
+
+
+/* part3-ის დასტილვა დამთავრდა */
+
+
+@media only screen and (min-width:768px){
+/* part1-ის ზომების შეცვლა */
+
+    .first-image{
+        display:none
+    }
+    .first-image-tablet{
+        display: block;
+        width:100%;
+        height:600px;
+    }
+
+    .location-box{
+        left:39px;;
+    }
+
+/* დასრულდა პარტ1 */
+
+/* part2-ის ზომები */
+
+    .part2{
+        height: 436px;
+        width: 100%;
+        display:flex;
+        padding-top:88px;
+        padding-left: 39px;;
+    }
+
+    .part2-h1,.part2-h2,.part2-p,.part2-p2{
+        margin:0;
+    }
+
+    .part2-h1{
+        width:223px;
+        height:100px;
+        font-family: 'Big Shoulders Display';
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: left;        
+    }
+
+    .part2-maintext{
+        width:400px;
+    }
+
+    .part2-h2{
+        height: 32px;
+        width: 350px;
+        font-family: 'Big Shoulders Display';
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .part2-p{
+        height: 84px;
+        width: 398px;
+        left: 0px;
+        top: 52px;
+        border-radius: 0;
+        font-family: 'Outfit';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top:20px;
+    }
+
+    .part2-p2{
+        height: 112px;
+        width: 398px;
+        font-family: 'Outfit';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top:20px;
+    }
+
+
+/*part2 დასრულდა */
+
+/*part3 დასრული */
+
+.part3{
+    height: 216px;
+    width: 100%;
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-around;
+    padding-top:56px;
+    box-sizing: border-box;
+}
+
+.logo-dark,.part3-p,.socialmedia-logos{
+    margin:0;
+}
+
+.logo-dark{
+    height: 40px;
+    width: 110.0499038696289px;
+}
+
+.part3-p{
+    height: 104px;
+    width: 281px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+}
+
+@media only screen and (min-width:1440px){
+/*part1ის გადასტილვა */
+    .first-image-desktop{
+        display:block;
+        width:100%;
+    }
+
+
+    .first-image-tablet{
+        display:none;
+
+    }
+
+    .location-box{
+        left:165px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+/* ეგარი */
+
+/* part2-ის დასტილვა */
+    .part2{
+        height: 548px;
+        width: 100%;
+        padding-top:102px;
+        padding-left:165px;
+    }
+
+    .part2-h1{
+        height: 140px;
+        width: 350px;
+        font-family: 'Big Shoulders Display';
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 70px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .part2-maintext{
+        width:540px;
+    }
+
+    .part2-h2{
+        height: 36px;
+        width: 350px;
+        font-family: 'Big Shoulders Display';
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .part2-p{
+        height: 96px;
+        width: 445px;
+        font-family: Outfit;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top:32px;
+    }
+
+    .part2-p2{
+        height: 128px;
+        width: 540px;
+        font-family: Outfit;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top:32px;
+    }
+/* part2 დასრულდა */
+
+/* part3 დაიწყო */
+
+    .part3{
+        height:244px;
+        padding-top:80px;
+        width:100%;
+    }
+
+    .logo-dark{
+        height: 58px;
+    width: 159.57235717773438px;
+    }
+
+    .part3-p{
+        height: 84px;
+        width: 430px;
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+/* part3 დამთავრდა */
+
+
+
+}
